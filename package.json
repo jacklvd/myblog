@@ -1,27 +1,31 @@
 {
-  "name": "myblog",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
-  },
-  "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
-    "@types/node": "latest",
-    "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest"
-  }
+    "name": "myblog",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "github-syntax-dark": "^0.5.0",
+        "html-react-parser": "^4.2.2",
+        "next": "^13.5.3",
+        "prettier": "^3.0.3",
+        "react": "latest",
+        "react-dom": "latest"
+    },
+    "devDependencies": {
+        "@types/node": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "autoprefixer": "latest",
+        "eslint": "latest",
+        "eslint-config-next": "latest",
+        "postcss": "latest",
+        "tailwindcss": "latest",
+        "typescript": "latest"
+    }
 }
