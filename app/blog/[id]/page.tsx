@@ -5,10 +5,12 @@ import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next'
 import detail from '../id.module.css'
 
 export default async function BlogPost({ params }: { params: { id: string } }) {
-    const { author, bodyHTML, createdAt, title } = await getBlogDetail(Number(params.id))
+    const { author, bodyHTML, createdAt, title } = await getBlogDetail(
+        Number(params.id),
+    )
     return (
         <section className="layout">
-            <div className="max-w-[50%]">
+            <div className="screen-size">
                 <h1 className="text-center my-10 text-[2rem] font-bold">
                     {' '}
                     {title}{' '}

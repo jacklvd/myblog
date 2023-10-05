@@ -2,7 +2,6 @@ import { BlogPost } from '../types/blog'
 import { getBlogs } from '../server/blogs'
 import BlogPreview from './components/BlogReview'
 
-
 export default async function Home() {
     let blogs: BlogPost[] = await getBlogs()
 
@@ -22,7 +21,7 @@ export default async function Home() {
                     return (
                         <div
                             key={blog.id}
-                            className="max-w-[28em] max-h-[20em] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-lg p-4 hover:bg-neutral-500 hover:text-neutral-300 transition-all duration-300"
+                            className="max-w-[28em] max-h-[20em] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-md p-4 hover:bg-neutral-500 hover:text-neutral-300 transition-all duration-300"
                         >
                             <a href={blog.url} rel="noreferrer">
                                 <BlogPreview
