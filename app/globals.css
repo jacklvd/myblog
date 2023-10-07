@@ -6,15 +6,23 @@
 
 @layer components {
     .layout {
-        @apply w-screen h-screen overflow-auto flex flex-col items-center bg-zinc-200 text-neutral-950 font-merriweather;
+        @apply w-screen h-screen overflow-auto flex flex-col items-center bg-zinc-100 text-neutral-950 font-merriweather;
     }
 }
 
 .screen-size {
     max-width: 46%;
+    margin: 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
+.header-background {
+    background-image: url('https://images.unsplash.com/photo-1694376015496-140430f9bf88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1828&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 828px) {
     .screen-size {
         max-width: 70%;
         margin: 0 1.1rem;
@@ -25,7 +33,7 @@
 @media (max-width: 448px) {
     .screen-size {
         max-width: 100%;
-        margin: 0 1.1rem;
+        margin: 1.2rem 1.1rem;
     }
 }
 
@@ -33,6 +41,6 @@
 @media (max-width: 280px) {
     .screen-size {
         max-width: 90%;
-        margin: 0 1.1rem;
+        margin: 0.8rem 1.1rem;
     }
 }

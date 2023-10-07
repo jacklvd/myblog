@@ -1,6 +1,7 @@
 import { BlogPost } from '../types/blog'
 import { getBlogs } from '../server/blogs'
 import BlogPreview from './components/BlogReview'
+import NavBar from './components/NavBar'
 
 export default async function Home() {
     let blogs: BlogPost[] = await getBlogs()

@@ -10,12 +10,14 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
     )
     return (
         <section className="layout">
-            <div className="screen-size">
+            <div className="header-background w-screen text-neutral-100">
                 <h1 className="text-center my-10 text-[2rem] font-bold">
                     {' '}
                     {title}{' '}
                 </h1>
-                <div className="flex justify-center mb-4">
+            </div>
+            <div className="screen-size">
+                <div className="flex justify-center mt-2 mb-4">
                     <BlogHeader createdAt={createdAt} author={author} />
                 </div>
                 <div className={`${detail.html} flex flex-col`}>
