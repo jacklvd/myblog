@@ -7,8 +7,15 @@
 
 @layer components {
     .layout {
-        @apply w-screen h-screen box-border grid items-center justify-center bg-zinc-100 text-neutral-950 font-merriweather;
+        @apply overflow-auto bg-zinc-100 text-neutral-950 font-merriweather;
     }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 .intro {
@@ -22,8 +29,8 @@
 }
 
 .blog-review {
-    grid-template-rows: repeat(2, 3fr);
-    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
 }
 
 .header-background {
@@ -31,9 +38,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 3rem;
 }
 
-@media screen and (max-width: 828px) {
+@media screen and (max-width: 992px) {
     .screen-size {
         max-width: 70%;
         margin: 0 1.1rem;
@@ -42,6 +50,21 @@
     .intro {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
+        margin: 1rem 1rem;
+    }
+
+    .intro h1 {
+        text-align: center;
+    }
+
+    .book-image {
+        margin: auto;
+    }
+
+    .blog-review {
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+        margin: 1rem 1rem;
     }
 }
 
@@ -60,7 +83,7 @@
 
 /* Add a media query for small screens (max-width: 500px */
 @media (max-width: 500px) {
-    .book-image{
+    .book-image {
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;

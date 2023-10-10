@@ -9,7 +9,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
         Number(params.id),
     )
     return (
-        <section className="layout">
+        <section className="layout flex flex-col h-screen w-screen items-center">
             <div className="header-background w-screen text-neutral-100">
                 <h1 className="text-center my-10 text-[2rem] font-bold">
                     {' '}

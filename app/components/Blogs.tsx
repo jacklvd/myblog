@@ -7,9 +7,9 @@ const Blogs = async () => {
     let blogs: BlogPost[] = await getBlogs()
     return (
         <>
-            <section className="justify-center text-[1.15rem] mt-12 max-w-7xl">
-                <h1 className='text-[3rem] text-center'>Blogs</h1>
-                <div className='grid .grid-cols-3 items-center'>
+            <section className="justify-center text-[1.15rem] mt-12 max-w-7xl ml-auto mr-auto pt-24">
+                <h1 className="text-[3rem] text-center mb-10">Blogs</h1>
+                <div className="grid blog-review items-center">
                     {blogs.map((blog: BlogPost) => {
                         return (
                             <div
@@ -30,7 +30,6 @@ const Blogs = async () => {
                 </div>
             </section>
         </>
-
     )
 }
 
