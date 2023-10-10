@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 @import 'github-syntax-dark/lib/github-dark.css';
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
     .layout {
-        @apply w-screen h-screen overflow-auto flex flex-col items-center bg-zinc-100 text-neutral-950 font-merriweather;
+        @apply w-screen h-screen box-border grid items-center justify-center bg-zinc-100 text-neutral-950 font-merriweather;
     }
+}
+
+.intro {
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 2rem;
 }
 
 .screen-size {
     max-width: 46%;
     margin: 1rem 0;
+}
+
+.blog-review {
+    grid-template-rows: repeat(2, 3fr);
+    column-gap: 2rem;
 }
 
 .header-background {
@@ -27,6 +38,11 @@
         max-width: 70%;
         margin: 0 1.1rem;
     }
+
+    .intro {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
 }
 
 /* Add a media query for small screens (max-width: 448px) */
@@ -34,6 +50,20 @@
     .screen-size {
         max-width: 100%;
         margin: 1.2rem 1.1rem;
+    }
+
+    .text-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+/* Add a media query for small screens (max-width: 500px */
+@media (max-width: 500px) {
+    .book-image{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
