@@ -5,7 +5,7 @@ import Bookshelf from '../../assets/img/book-image.jpg'
 const Intro = () => {
     return (
         <section className="max-w-7xl mt-11 ml-auto mr-auto justify-center">
-            <div className="h-auto px-5 py-10 mx-auto grid intro">
+            <div className="px-5 py-10 mx-auto grid intro">
                 <div className="mt-3">
                     <Image
                         src={Bookshelf}
