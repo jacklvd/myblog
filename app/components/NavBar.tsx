@@ -15,7 +15,7 @@ const NavBar = () => {
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <Link href="/" className="flex items-center">
                             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-                                Jack Daily Blogs
+                                Jack&apos;s Blogs
                             </span>
                         </Link>
                         <button

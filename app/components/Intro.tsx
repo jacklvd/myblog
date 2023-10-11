@@ -4,20 +4,18 @@ import Bookshelf from '../../assets/img/book-image.jpg'
 
 const Intro = () => {
     return (
-        <section className="max-w-7xl h-screen mt-11 ml-auto mr-auto justify-center">
+        <section className="max-w-7xl mt-11 ml-auto mr-auto justify-center">
             <div className="h-auto px-5 py-10 mx-auto grid intro">
-                <div className="">
+                <div className="mt-3">
                     <Image
                         src={Bookshelf}
                         alt="bookshelf"
-                        width={600}
-                        height={1000}
-                        className="rounded-3xl book-image object-cover justify-self-center items-center"
+                        priority={true}
+                        className="rounded-3xl book-image object-cover mx-auto"
                     />
                 </div>
-                <div className="">
+                <div className="content mx-auto">
                     <h1 className="text-[2rem]">About Website</h1>
-                    <br />
                     <p>
                         Hello, I&apos;m Jack Vo, an undergraduate Computer
                         Science major at the University of Cincinnati. I&apos;m
@@ -46,24 +44,24 @@ const Intro = () => {
                         connections.
                     </p>
                     <br />
-                    <>
+                    <p>
                         Email:{' '}
                         <a
                             href="mailto:volg@mail.uc.edu"
-                            className="hover:text-neutral-900"
+                            className="hover:underline"
                         >
                             volg@mail.uc.edu
                         </a>
-                    </>
+                    </p>
                     <p>
                         LinkedIn:{' '}
                         <a
                             href="https://www.linkedin.com/in/itsmejack/"
-                            className="hover:text-neutral-900"
+                            className="hover:underline"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            https://www.linkedin.com/in/itsmejack/
+                            linkedin.com/in/itsmejack/
                         </a>
                     </p>
                 </div>

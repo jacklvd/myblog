@@ -9,7 +9,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
         Number(params.id),
     )
     return (
-        <section className="layout flex flex-col h-screen w-screen items-center">
+        <section className="layout flex flex-col items-center overflow-hidden">
             <div className="header-background w-screen text-neutral-100">
                 <h1 className="text-center my-10 text-[2rem] font-bold">
                     {' '}
@@ -20,7 +20,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
                 <div className="flex justify-center mt-2 mb-4">
                     <BlogHeader createdAt={createdAt} author={author} />
                 </div>
-                <div className={`${detail.html} flex flex-col`}>
+                <div className={`${detail.html} flex flex-col overflow-auto`}>
                     {parse(bodyHTML)}
                 </div>
             </div>

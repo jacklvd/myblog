@@ -7,7 +7,7 @@
 
 @layer components {
     .layout {
-        @apply overflow-auto bg-zinc-100 text-neutral-950 font-merriweather;
+        @apply overflow-auto text-neutral-950 font-merriweather;
     }
 }
 
@@ -30,7 +30,7 @@
 
 .blog-review {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.5rem;
+    column-gap: 2.5rem;
 }
 
 .header-background {
@@ -57,13 +57,10 @@
         text-align: center;
     }
 
-    .book-image {
-        margin: auto;
-    }
-
     .blog-review {
         grid-template-columns: 1fr;
         row-gap: 1.5rem;
+        place-items: center;
         margin: 1rem 1rem;
     }
 }
@@ -81,7 +78,7 @@
     }
 }
 
-/* Add a media query for small screens (max-width: 500px */
+/* Add a media query for small screens (max-width: 500px) */
 @media (max-width: 500px) {
     .book-image {
         width: 100%;
@@ -95,5 +92,32 @@
     .screen-size {
         max-width: 90%;
         margin: 0.8rem 1.1rem;
+    }
+
+    .blog-review {
+        margin: 1rem 1rem;
+        max-width: 18rem;
+        max-height: 16rem;
+    }
+
+    .blog-review h2 {
+        font-size: 1rem;
+    }
+
+    .blog-review p {
+        font-size: 0.8rem;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .blog-header {
+        font-size: 0.7rem;
     }
 }

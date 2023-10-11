@@ -2,6 +2,7 @@
 
 # env
 .env
+.env.production
 categoryid.txt
 
 # dependencies
