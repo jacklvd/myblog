@@ -64,7 +64,6 @@
     }
 }
 
-
 /* Add a media query for small screens (max-width: 500px) */
 @media (max-width: 500px) {
     .book-image {
