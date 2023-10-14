@@ -20,7 +20,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
                 <div className="flex justify-center mt-2 mb-4">
                     <BlogHeader createdAt={createdAt} author={author} />
                 </div>
-                <div className={`${detail.html} flex flex-col overflow-auto`}>
+                <div className={`${detail.html} flex flex-col overflow-auto section-details`}>
                     {parse(bodyHTML)}
                 </div>
             </div>

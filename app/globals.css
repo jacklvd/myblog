@@ -44,7 +44,6 @@
 @media screen and (max-width: 992px) {
     .screen-size {
         max-width: 70%;
-        margin: 0 1.1rem;
     }
 
     .intro {
@@ -65,6 +64,24 @@
     }
 }
 
+
+/* Add a media query for small screens (max-width: 500px) */
+@media (max-width: 500px) {
+    .book-image {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .screen-size {
+        max-width: 100%;
+    }
+
+    .section-details {
+        margin: 1rem 1rem;
+    }
+}
+
 /* Add a media query for small screens (max-width: 448px) */
 @media (max-width: 448px) {
     .screen-size {
@@ -78,20 +95,10 @@
     }
 }
 
-/* Add a media query for small screens (max-width: 500px) */
-@media (max-width: 500px) {
-    .book-image {
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
-
 /* Add a media query for small screens (max-width: 280px) */
 @media (max-width: 280px) {
     .screen-size {
         max-width: 90%;
-        margin: 0.8rem 1.1rem;
     }
 
     .blog-review {
