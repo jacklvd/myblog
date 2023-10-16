@@ -60,6 +60,12 @@
     margin-right: 0.5rem;
 }
 
+@media (max-width: 1024px) {
+    .html > * > pre {
+        overflow-x: scroll;
+    }
+}
+
 /* Add a media query for small screens (max-width: 748px) */
 @media (max-width: 748px) {
     .html > h1 {
@@ -78,10 +84,6 @@
         font-size: 1.15rem;
         font-weight: 500;
         margin-bottom: 1.8rem;
-    }
-
-    .html > * > pre {
-        overflow-x: scroll;
     }
 }
 

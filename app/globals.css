@@ -41,7 +41,7 @@
     margin-top: 3rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     .screen-size {
         max-width: 70%;
     }
