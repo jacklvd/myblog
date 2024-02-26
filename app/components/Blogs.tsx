@@ -14,7 +14,7 @@ const Blogs = async () => {
                         return (
                             <div
                                 key={blog.id}
-                                className="blog max-w-[28em] max-h-[20em] bg-neutral-100 text-zinc-800 rounded-md p-4 hover:bg-neutral-900 hover:text-neutral-300 transition-all duration-300"
+                                className="blog max-w-[28em] max-h-[20em] bg-neutral-100 text-zinc-800 rounded-md p-4 hover:bg-neutral-900 hover:text-neutral-300 transition-all duration-300 mt-4"
                             >
                                 <a href={blog.url} rel="noreferrer">
                                     <BlogPreview
