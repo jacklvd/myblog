@@ -2,7 +2,6 @@ import React from 'react';
 import { BlogPost } from '@/types/blog';
 import BlogHeader from './BlogHeader';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { ArrowRightIcon } from "lucide-react";
 
 const BlogPreview: React.FC<BlogPost> = (props) => {
@@ -21,16 +20,6 @@ const BlogPreview: React.FC<BlogPost> = (props) => {
                 <p className="mt-2 text-muted-foreground line-clamp-3">
                     {previewText}
                 </p>
-
-                {/* {tags && (
-                    <div className="flex flex-wrap gap-2 mt-3">
-                        {tags.map((tag, index) => (
-                            <Badge key={index} variant="secondary" className="text-xs">
-                                {tag}
-                            </Badge>
-                        ))}
-                    </div>
-                )} */}
             </CardContent>
 
             <CardFooter className="px-5 py-4 border-t bg-muted/40">
