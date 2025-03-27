@@ -1,7 +1,6 @@
-import { getBlogDetail } from '../../../server/blogs'
-import BlogHeader from '../../components/BlogHeader'
+import { getBlogDetail } from '@/server/blogs'
+import BlogHeader from '@/components/BlogHeader'
 import parse from 'html-react-parser'
-import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next'
 import detail from '../id.module.css'
 
 export default async function BlogPost({ params }: { params: { id: string } }) {

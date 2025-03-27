@@ -1,5 +1,7 @@
-import Intro from './components/Intro'
-import Blogs from './components/Blogs'
+import { lazy } from 'react'
+
+const Intro = lazy(() => import('@/components/Intro'))
+const Blogs = lazy(() => import('@/components/Blogs'))
 
 export default function Home() {
     return (
